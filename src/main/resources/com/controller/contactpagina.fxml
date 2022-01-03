@@ -5,7 +5,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.overstromingfx.SceneSwitch">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controller.SceneSwitch">
    <children>
        <Button layoutX="653.0" layoutY="14.0" mnemonicParsing="false" onAction="#onAdminLoginPress" text="Admin Login">
            <font>
@@ -28,6 +28,6 @@
                <Font size="14.0" />
            </font>
        </Button>
-      <Text layoutX="346.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tekst over ons" />
+      <Text layoutX="340.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tekst contact" />
    </children>
 </AnchorPane>

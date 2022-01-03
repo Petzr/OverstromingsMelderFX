@@ -1,4 +1,4 @@
-package com.example.overstromingfx;
+package com.controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

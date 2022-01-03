@@ -11,6 +11,6 @@ module com.example.overstromingfx {
     requires eu.hansolo.tilesfx;
     requires java.sql;
 
-    opens com.example.overstromingfx to javafx.fxml;
-    exports com.example.overstromingfx;
+    opens com.controller to javafx.fxml;
+    exports com.controller;
 }

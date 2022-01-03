@@ -1,4 +1,4 @@
-package com.example.overstromingfx;
+package com.controller;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

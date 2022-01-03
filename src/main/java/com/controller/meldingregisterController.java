@@ -1,9 +1,8 @@
-package com.example.overstromingfx;
+package com.controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.MenuButton;
 
 import java.io.IOException;
