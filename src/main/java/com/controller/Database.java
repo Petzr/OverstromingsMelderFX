@@ -5,12 +5,12 @@ import java.sql.*;
 public class Database {
 
     // schema naam invullen (niet hoofdletter gevoelig
-    static String schema = "overstromingmelder";
+    static String schema = "";
 
     // root username
-    static String user = "root";
+    static String user = "";
     // root password
-    static String password = "root";
+    static String password = "";
 
     static Connection databaseConnection;
     static Statement statement;
