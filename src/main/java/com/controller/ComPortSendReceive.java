@@ -86,7 +86,6 @@ public class ComPortSendReceive {
         }
 
         StringBuilder bericht = new StringBuilder();
-        //InsertIntoSQL database = new InsertIntoSQL();   //Deze regel uitcommenten als SQL nog niet werkt.
         serialPort.addDataListener(new SerialPortDataListener() {
             @Override
             public int getListeningEvents() {
