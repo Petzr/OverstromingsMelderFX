@@ -28,7 +28,6 @@ public class InsertIntoSQL {
         }
         return conn;
     }
-
     /**
      * Insert a new row into the tbl1 table
      *

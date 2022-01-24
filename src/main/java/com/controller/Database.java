@@ -25,6 +25,13 @@ public class Database {
         }
     }
 
+    public static void insertIntoDatabase(String query) throws Exception{
+
+            PreparedStatement preparedStatement = databaseConnection.prepareStatement(query);
+            preparedStatement.executeUpdate();
+
+    }
+
 
     public static boolean getAdmin(String email, String wachtwoord) throws SQLException {
 
