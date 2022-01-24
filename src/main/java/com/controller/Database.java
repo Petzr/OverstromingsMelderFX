@@ -29,7 +29,7 @@ public class Database {
     public static boolean getAdmin(String email, String wachtwoord) throws SQLException {
 
         // table naam invullen (niet hoofdletter gevoelig)
-        String table = "login";
+        String table = "";
 
         ResultSet admin = statement.executeQuery("select * from "+ table);
 
@@ -49,7 +49,7 @@ public class Database {
     public static String getGemeente(String gemeenteNaam) throws SQLException {
 
         // table naam invullen (niet hoofdletter gevoelig)
-        String table = "gemeente";
+        String table = "";
 
         ResultSet gemeente = statement.executeQuery("select * from "+ table);
 
