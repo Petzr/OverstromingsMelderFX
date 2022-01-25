@@ -31,9 +31,7 @@ public class Database {
         // table naam invullen (niet hoofdletter gevoelig)
         String table = "login";
 
-        ResultSet admin = statement.executeQuery("select naam, waterniveau\n" +
-                "from gemeente join microbit\n" +
-                "on gemeente.microbit = microbit.idmicrobit");
+        ResultSet admin = statement.executeQuery("select * from login");
 
         // mogelijk statments veranderen voor de correcte antributen
         while (admin.next()) {
