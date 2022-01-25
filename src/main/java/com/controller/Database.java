@@ -53,6 +53,20 @@ public class Database {
 
     }
 
+    public static void showGemeentes() throws SQLException{
+        ResultSet gemeentes = statement.executeQuery(
+                "select naam, waterniveau\n"+
+                        "from gemeente join microbit \n" +
+                        "on gemeente.microbit = microbit.idmicrobit"
+        );
+
+        while (gemeentes.next()) {
+            System.out.println(gemeentes.getString("naam") +
+                    ", waterniveau:"+
+                    gemeentes.getString("waterniveau"));
+        }
+    }
+
     public static String getGemeente(String gemeenteNaam) throws SQLException {
 
         // de SQL query dit moet worden uitgevoerd:
