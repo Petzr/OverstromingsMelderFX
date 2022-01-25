@@ -95,6 +95,7 @@ public class ComPortSendReceive {
             }
 
             public void serialEvent(SerialPortEvent event) {
+                System.out.println("test");
                 //if (event.getEventType() != SerialPort.LISTENING_EVENT_DATA_AVAILABLE) { return; }
                 String vorigTijdstip = null;
                 byte buffer[] = new byte[serialPort.bytesAvailable()];
