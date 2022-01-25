@@ -50,10 +50,11 @@ public class Database {
 
     public static String getGemeente(String gemeenteNaam) throws SQLException {
 
-        // table naam invullen (niet hoofdletter gevoelig)
-        String table = "gemeente";
-
-        ResultSet gemeente = statement.executeQuery("select * from "+ table);
+        // de SQL query dit moet worden uitgevoerd:
+        ResultSet gemeente = statement.executeQuery(
+                "select naam, waterniveau\n" +
+                        "from gemeente join microbit \n" +
+                        "on gemeente.microbit = microbit.idmicrobit");
 
         // mogelijk statements veranderen voor de correcte antributen
         while (gemeente.next()) {
