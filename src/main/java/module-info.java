@@ -1,4 +1,4 @@
-module com.example.overstromingfx {
+module com.controller {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
