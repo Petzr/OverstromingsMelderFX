@@ -19,6 +19,8 @@ public class HelloApplication extends Application {
     }
 
     public static void main(String[] args) {
+        System.out.println("trying connection with MicroBit");
+        ComPortSendReceive.startConnectionMicroBit();
         System.out.println("STARING PROGRAM...");
         launch();
     }

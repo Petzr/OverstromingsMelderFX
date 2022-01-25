@@ -36,7 +36,7 @@ public class ComPortSendReceive {
 
     public static SerialPort serialPort;
 
-    public static void main(String[] args) {
+    public static void startConnectionMicroBit() {
 
         String portName;
         SerialPort portNames[] = SerialPort.getCommPorts();
