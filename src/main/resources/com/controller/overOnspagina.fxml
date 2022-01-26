@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controller.SceneSwitch">
    <children>
@@ -28,6 +28,9 @@
                <Font size="14.0" />
            </font>
        </Button>
-      <Text layoutX="346.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tekst over ons" />
+      <Label alignment="TOP_LEFT" layoutX="200.0" layoutY="72.0" prefHeight="293.0" prefWidth="370.0" text="Beste lezer, &#10;&#10;In juli 2021 zijn regio’s in Limburg hard geraakt door de overstromingen. Dit zag niemand aankomen. Samen met mijn team heb we tijdens een schoolproject een idee bedacht om dit in de toekomst te voorkomen. Het idee dat we hebben uitgewerkt is dat we een overstromingsdetector gaan maken.  &#10;&#10;We gaan dus een overstromingsdetector plaatsen in de riolen en ook in rivieren die het waterniveau kan meten van de geselecteerde plaatsen die gevaarlijk zouden kunnen zijn, in geval van een overstroming. De gemeentes waar we de detectors plaatsen bevinden zich allemaal in Limburg. Met onze oplossing proberen we de schade te beperken door vroegtijdige waarschuwingen te sturen naar iedereen die in de provincie Limburg woont, zodat iedereen zich op tijd kan voorbereiden op een overstroming. &#10;&#10;Dit project is gemaakt door studenten van de Haagse Hogeschool van de opleiding HBO-ICT.  &#10;&#10;Onze locatie is: Den Haag, Johanna Westerdijkplein 75, 2521 NL Den Haag. " wrapText="true">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
    </children>
 </AnchorPane>

@@ -10,6 +10,7 @@ module com.controller {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires java.sql;
+    requires com.fazecast.jSerialComm;
 
     opens com.controller to javafx.fxml;
     exports com.controller;

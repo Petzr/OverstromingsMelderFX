@@ -25,6 +25,13 @@ public class Database {
         }
     }
 
+    public static void insertIntoDatabase(String query) throws Exception{
+
+            PreparedStatement preparedStatement = databaseConnection.prepareStatement(query);
+            preparedStatement.executeUpdate();
+
+    }
+
 
     public static boolean getAdmin(String email, String wachtwoord) throws SQLException {
 
@@ -46,15 +53,29 @@ public class Database {
 
     }
 
+    public static void showGemeentes() throws SQLException{
+        ResultSet gemeentes = statement.executeQuery(
+                "select naam, waterniveau\n"+
+                        "from gemeente join microbit \n" +
+                        "on gemeente.microbit = microbit.idmicrobit"
+        );
+
+        while (gemeentes.next()) {
+            System.out.println(gemeentes.getString("naam") +
+                    ", waterniveau:"+
+                    gemeentes.getString("waterniveau"));
+        }
+    }
+
     public static String getGemeente(String gemeenteNaam) throws SQLException {
 
         // de SQL query dit moet worden uitgevoerd:
         ResultSet gemeente = statement.executeQuery(
                 "select naam, waterniveau\n" +
-                        "from gemeente join microbit \n" +
-                        "on gemeente.microbit = microbit.idmicrobit");
+                "from gemeente join microbit \n" +
+                "on gemeente.microbit = microbit.idmicrobit");
 
-        // mogelijk statements veranderen voor de correcte antributen
+        // mogelijk statements veranderen voor de correcte antributen/ column
         while (gemeente.next()) {
             if (gemeenteNaam.equals(gemeente.getString("naam"))) {
                 String waterniveau = gemeente.getString("waterniveau");
