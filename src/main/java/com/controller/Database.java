@@ -38,7 +38,7 @@ public class Database {
         // table naam invullen (niet hoofdletter gevoelig)
         String table = "login";
 
-        ResultSet admin = statement.executeQuery("select * from "+ table);
+        ResultSet admin = statement.executeQuery("select * from login");
 
         // mogelijk statments veranderen voor de correcte antributen
         while (admin.next()) {
