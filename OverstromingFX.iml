@@ -36,6 +36,15 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.apiguardian:apiguardian-api:1.1.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.junit.jupiter:junit-jupiter-engine:5.8.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.junit.platform:junit-platform-engine:1.8.1" level="project" />
-    <orderEntry type="library" name="fazecast.jSerialComm" level="project" />
+    <orderEntry type="module-library" exported="">
+      <library type="repository">
+        <properties maven-id="com.fazecast:jSerialComm:2.8.5" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/jSerialComm-2.8.5.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
